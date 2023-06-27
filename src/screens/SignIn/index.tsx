@@ -17,7 +17,6 @@ export function SignIn() {
   const [isAuthenticating, setIsAuthenticating] = useState(false);
 
   const app = useApp();
- 
 
   const [_, response, googleSignIn] = Google.useAuthRequest({
     androidClientId: ANDROID_CLIENTE_ID,

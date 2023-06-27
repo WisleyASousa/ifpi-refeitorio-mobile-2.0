@@ -38,7 +38,7 @@ export const ListNonAtt = styled.View`
 `
 
 export const BoxAlert = styled.View`
-  border-width: 1;
+  
   border-color: ${({ theme }) => theme.COLORS.RED };
   border-radius: 35px;
   align-items: center;
@@ -46,5 +46,5 @@ export const BoxAlert = styled.View`
   padding: 10px;
   width: 250px;
   margin-top: 90px;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_600 };
+  background-color: ${({ theme }) => theme.COLORS.GRAY_700 };
 `
