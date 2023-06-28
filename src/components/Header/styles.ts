@@ -6,7 +6,7 @@ export const Container = styled.ImageBackground`
   width: 100%;
   /* height: 220px; */
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   position: absolute;
   top: -40px;
   flex-direction: row;
@@ -54,7 +54,7 @@ export const TimerContainer = styled.View`
   align-items: center;
   margin-top: 8px;
   position: absolute;
-  top: 130px;
+  top: 120px;
   box-shadow: 0px 0px 2px ${({ theme }) => theme.COLORS.YELLOW };
 `
 export const TimerBox = styled.View`

@@ -100,7 +100,7 @@ export function Profile() {
         <View style={{ height:250 }} />
       </ScrollView>
       
-        <Header />
+        {/* <Header /> */}
     </Container> 
     )
 }

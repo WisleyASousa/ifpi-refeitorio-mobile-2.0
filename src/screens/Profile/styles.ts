@@ -34,7 +34,7 @@ export const ListInfo = styled.View`
   gap: 8px;
   align-items: center;
   padding: 0 0 8px 0;
-  border-bottom-width: 1;
+  border-bottom-width: 1px;
   border-color: ${({ theme }) => theme.COLORS.BRAND_LIGHT };
 `
 export const PictureProfile = styled(Image)`
@@ -59,7 +59,7 @@ export const ListInfoNotice = styled.View`
   align-items: center;
   gap: 8px;
   padding: 0 0 8px 0;
-  border-bottom-width: 1;
+  border-bottom-width: 1px;
   border-color: ${({ theme }) => theme.COLORS.BRAND_LIGHT };
 `
 

@@ -40,7 +40,7 @@ export function NonAttendance() {
         
         <View style={{ height:250 }} />  
       </ScrollView>
-      <Header />
+      {/* <Header /> */}
     </Container> 
     )
 }

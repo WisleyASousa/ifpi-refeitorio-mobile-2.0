@@ -3,7 +3,7 @@ import { Container, ContainerMenu, HeaderBoxMenu, HeaderContainerMenu, SubTitle,
 import backgroundImage from "../../assets/background.png";
 import { Header } from "../../components/Header";
 import { ScrollView, Switch, View } from "react-native";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Menu } from "../../components/Menu";
 
@@ -58,8 +58,26 @@ const data = [
 export function Home() {
   const [confirm, setConfirm] = useState(false)
   const { bottom, top } = useSafeAreaInsets()
+  const [menuData, setMenuData] = useState([])
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:3000/menu')
+  //       if (!response.ok) {
+  //         throw new Error('Erro ao obter os menus')
+  //       }
+  //       const data = await response.json()
+  //       setMenuData(data)
+  //     } catch (error) {
+  //       console.error(error)
+  //     }
 
+        
+  //   }
+  //   fetchData()
+  // }, [])
+  // console.log(menuData)
   return (
     <Container source={backgroundImage}>
       <ScrollView 
@@ -77,7 +95,6 @@ export function Home() {
           </View>
           <TextMenu>Agendar</TextMenu>
         </View>
-
         {data.map((item, index) => (
           <Menu 
             key={index} 
@@ -89,10 +106,11 @@ export function Home() {
             active={item.active}
           />
         ))}
-          <View style={{ height:250 }} />
+          <View style={{ height:250 }} 
+          />
       </ScrollView>
 
-      <Header />
+      {/* <Header /> */}
     </Container>
   );
 }

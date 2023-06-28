@@ -90,4 +90,5 @@ export const TextMenuItems = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
   justify-content: center;
   align-items: center;
+  padding: 4px 0;
 `

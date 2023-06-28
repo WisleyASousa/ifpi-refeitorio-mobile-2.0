@@ -126,6 +126,8 @@ export function AppRoutes() {
           }}
         />
       </Navigator>
+      <Header />
+
       {/* <CustomTabBar /> */}
 
     </>

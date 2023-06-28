@@ -33,7 +33,7 @@ export const ListNonAtt = styled.View`
   justify-content: space-around;
   align-items: center;
   padding: 0 0 8px 0;
-  border-bottom-width: 1;
+  border-bottom-width: 1px;
   border-color: ${({ theme }) => theme.COLORS.BRAND_MID };
 `
 
